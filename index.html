@@ -7,7 +7,9 @@
         content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
-  <link href="./tailwind.css"
+  <link href="./styles/tailwind.css"
+        rel="stylesheet">
+  <link href="./styles/custom.css"
         rel="stylesheet">
 
   <script src="shared/constants.js"></script>
@@ -18,22 +20,56 @@
 </head>
 
 <body>
-  <div x-data="{...petListings(), ...dropdownBehavior()}">
-    <div x-spread="wrapper">
+  <div x-data="{...petListings(), ...dropdownBehavior()}"
+       class="px-36 py-24">
+    <!-- dropdown -->
+    <div x-spread="wrapper"
+         class="relative w-368px-rem">
       <div x-spread="trigger"
-           x-text="selectedPetListingState"
-           class="p-8">
+           class="relative
+                  p-4 cursor-pointer
+                  w-368px-rem h-58px-rem
+                  border border-solid rounded-md border-gray-b3">
+        <div x-text="selectedPetListState"
+             class="absolute
+                    top-1/2 -transform-1/2">
+        </div>
+
+        <template x-if="!open">
+          <span class="material-icons
+                 absolute
+                 top-1/2 -transform-1/2 right-4">
+            arrow_drop_down
+          </span>
+        </template>
+
+        <template x-if="open">
+          <span class="material-icons
+                       absolute
+                       top-1/2 -transform-1/2 right-4">
+            arrow_drop_up
+          </span>
+        </template>
       </div>
 
-      <template x-for="state of petListingState"
-                :key="state">
-        <div x-spread="menu">
-          <span x-text="state"
-                x-on:click="selectedPetListingState = state">
-          </span>
-        </div>
-      </template>
+      <div class="py-2 mt-2.5 bg-white
+                  border border-solid rounded-md border-gray-b3 shadow-md"
+           :class="{ 'hidden': !open }">
+        <template x-for="state of petListingState"
+                  :key="state">
+          <div x-spread="menu"
+               x-on:click="setPetListFilter(state)"
+               class="px-5
+                      hover:bg-gray-200 cursor-pointer">
+            <span x-text="state"
+                  class="leading-10">
+            </span>
+          </div>
+        </template>
+      </div>
     </div>
+
+    <!-- listing -->
   </div>
 </body>
 

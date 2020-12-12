@@ -1,0 +1,16 @@
+.border-gray-b3 {
+  --tw-border-opacity: 1;
+  border-color: rgba(179, 179, 179, var(--tw-border-opacity));
+}
+
+.w-368px-rem {
+  width: 23rem;
+}
+
+.h-58px-rem {
+  height: 3.625rem;
+}
+
+.-transform-1\/2 {
+  transform: translateY(-50%)
+}

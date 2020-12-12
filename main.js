@@ -1,5 +1,8 @@
 function petListings() {
   return {
-    selectedPetListingState: 'Default',
+    selectedPetListState: 'Default',
+    setPetListFilter(state) {
+      this.selectedPetListState = state;
+    }
   }
 }

@@ -1,5 +1,6 @@
 function dropdownBehavior() {
   return {
+    open: false,
     wrapper: {
       ['@keydown.window.escape']() {
         this.open = false
@@ -19,6 +20,9 @@ function dropdownBehavior() {
     menu: {
       ['x-show']() {
         return this.open
+      },
+      ['@click']() {
+        this.open = false;
       }
     }
   }
