@@ -10,14 +10,31 @@
   <link href="./tailwind.css"
         rel="stylesheet">
 
+  <script src="shared/constants.js"></script>
+  <script src="./shared/dropdownBehavior.js"></script>
   <script src="./main.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-          defer>
-  </script>
+          defer></script>
 </head>
 
 <body>
-  
+  <div x-data="{...petListings(), ...dropdownBehavior()}">
+    <div x-spread="wrapper">
+      <div x-spread="trigger"
+           x-text="selectedPetListingState"
+           class="p-8">
+      </div>
+
+      <template x-for="state of petListingState"
+                :key="state">
+        <div x-spread="menu">
+          <span x-text="state"
+                x-on:click="selectedPetListingState = state">
+          </span>
+        </div>
+      </template>
+    </div>
+  </div>
 </body>
 
 </html>
