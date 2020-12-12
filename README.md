@@ -11,5 +11,5 @@ To run locally, open the index.html file in browser:
 Live code can be viewed at: https://abcduong.github.io/AAP-challenge/
 
 # Versions being used
-tailwind@v2&#46;0&#46;1
-alpine@v2&#46;x&#46;x
+`tailwind@v2&#46;0&#46;1`
+`alpine@v2&#46;x&#46;x`
