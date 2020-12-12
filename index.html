@@ -45,7 +45,7 @@
     <!-- dropdown -->
     <template x-if="!isLoading">
       <div x-spread="wrapper"
-           class="relative w-368px-rem">
+           class="relative w-368px-rem ml-4">
         <div x-spread="trigger"
              class="relative
              p-4 cursor-pointer
@@ -115,12 +115,12 @@
     <!-- listing container -->
     <template x-if="!isFiltering">
       <div class="mt-10
-                  flex flex-wrap justify-between">
+                  flex flex-wrap justify-start">
         <template x-if="!isLoading">
           <template x-for="pet in petListFiltered"
                     :key="pet">
             <!-- pet card -->
-            <div class="my-4 relative
+            <div class="m-4 relative
                         bg-white w-368px-rem shadow-md">
               <!-- image section/container -->
               <div class="relative">
