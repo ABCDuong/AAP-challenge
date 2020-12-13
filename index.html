@@ -132,6 +132,18 @@
                         flex flex-row
                         md:w-56 lg:w-96
                         md:flex md:flex-col">
+              <!-- more info -->
+              <template x-if="pet.isShowMoreInfo">
+                <div class="z-10 h-full w-full absolute bg-blue-0099B8">
+                  <span class="material-icons cursor-pointer text-white text-4xl
+                               absolute top-4 right-4"
+                        x-on:click="pet.isShowMoreInfo = false">
+                    close
+                  </span>
+                </div>
+              </template>
+
+
               <!-- small-screen heart/info icons -->
               <div class="small-screen-card-icons absolute right-2 top-4">
                 <div class="small-screen-card-icons absolute">
@@ -153,7 +165,8 @@
 
                   <div class="transformx-1/4-rem cursor-pointer">
                     <img src="images/info-over-white.svg"
-                         alt="more-info">
+                         alt="more-info"
+                         x-on:click="pet.isShowMoreInfo = true">
                   </div>
                 </div>
               </div>
@@ -199,7 +212,8 @@
 
                   <div class="transformx-1/4-rem cursor-pointer">
                     <img src="images/info.svg"
-                         alt="more-info">
+                         alt="more-info"
+                         x-on:click="pet.isShowMoreInfo = true">
                   </div>
                 </div>
               </div>

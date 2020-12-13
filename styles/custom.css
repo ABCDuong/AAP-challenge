@@ -25,6 +25,11 @@
   background-color: rgba(0, 191, 218, var(--tw-text-opacity));
 }
 
+.bg-blue-0099B8 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 153, 184, 100%);
+}
+
 .-transformx-1\/2 {
   transform: translateX(-50%);
 }

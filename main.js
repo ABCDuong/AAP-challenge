@@ -27,6 +27,7 @@ function petListings() {
         let petDetailData = await response.json();
         pet.details = petDetailData.pet;
         pet.isMarkedFavorite = false;
+        pet.isShowMoreInfo = false;
       }
     },
     filterPetList() {
