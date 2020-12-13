@@ -248,6 +248,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .pet-image {
+    min-width: 15rem;
+    width: 100%;
+    height: 100%;
+  }
+
   .small-screen-card-icons {
     display: initial;
     width: 2rem;
@@ -280,7 +286,8 @@
 
 @media screen and (max-width: 649px) {
   .pet-image {
-    min-width: 8rem;
+    min-width: 10rem;
+    width: 100%;
     height: 100%;
   }
 
