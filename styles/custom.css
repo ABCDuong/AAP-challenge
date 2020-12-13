@@ -116,6 +116,8 @@
   font-size: 1.875rem;
 }
 
+
+
 @media (max-width: 768px) {
   .small-screen-card-icons {
     display: initial;
@@ -147,19 +149,6 @@
   }
 }
 
-@media (max-width: 649) {
-  .more-info-entry {
-    font-size: 0.65rem;
-    line-height: 0.65rem;
-    padding: 0.15rem 0;
-  }
-
-  .-arrow-icon-text {
-    line-height: 0.95rem;
-    font-size: 1.175rem;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .more-info-category {
     flex: 0 0 29%;
@@ -172,6 +161,19 @@
   .-arrow-icon-text {
     font-size: 1.25rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 649) {
+  .more-info-entry {
+    font-size: 0.65rem;
+    line-height: 0.65rem;
+    padding: 0.15rem 0;
+  }
+
+  .-arrow-icon-text {
+    line-height: 0.95rem;
+    font-size: 1.175rem;
   }
 }
 
