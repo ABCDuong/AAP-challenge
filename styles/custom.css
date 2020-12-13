@@ -66,6 +66,15 @@
   display: block;
 }
 
+.small-favorited-icon {
+  width: 30px;
+  height: 33px;
+  font-size: 1.75rem;
+  text-align: center;
+  display: block;
+  margin-top: -5px;
+}
+
 @media (max-width: 768px) {
   .small-screen-card-icons {
     display: initial;

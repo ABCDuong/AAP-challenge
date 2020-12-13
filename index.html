@@ -136,13 +136,24 @@
               <div class="small-screen-card-icons absolute right-2 top-4">
                 <div class="small-screen-card-icons absolute">
                   <div class="cursor-pointer">
-                    <img src="images/favorite-over-white.svg"
-                         alt="favorite">
+                    <template x-if="!pet.isMarkedFavorite">
+                      <img src="images/favorite-over-white.svg"
+                           alt="favorite"
+                           x-on:click="pet.isMarkedFavorite = true">
+                    </template>
+
+                    <template x-if="pet.isMarkedFavorite">
+                      <span class="material-icons small-favorited-icon fade-in
+                                        text-3xl text-red-500"
+                            x-on:click="pet.isMarkedFavorite = false">
+                        favorite
+                      </span>
+                    </template>
                   </div>
 
                   <div class="transformx-1/4-rem cursor-pointer">
                     <img src="images/info-over-white.svg"
-                         alt="info">
+                         alt="more-info">
                   </div>
                 </div>
               </div>
