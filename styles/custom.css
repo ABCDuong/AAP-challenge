@@ -116,8 +116,11 @@
   font-size: 1.875rem;
 }
 
+.pet-image {
+  height: 100%;
+}
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .more-info-category {
     flex: 0 0 29%;
   }
@@ -125,14 +128,14 @@
   .truncate-overflow {
     -webkit-line-clamp: 3;
   }
-  
+
   .-arrow-icon-text {
     font-size: 1.25rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .small-screen-card-icons {
     display: initial;
     width: 2rem;
@@ -145,7 +148,7 @@
   .more-info-category {
     flex: 0 0 13%;
   }
-  
+
   .more-info-entry {
     line-height: 0.75rem;
   }
@@ -153,7 +156,7 @@
   .truncate-overflow {
     -webkit-line-clamp: 1;
   }
-  
+
   .more-info-container hr {
     display: none;
   }
@@ -163,7 +166,12 @@
   }
 }
 
-@media (max-width: 649) {
+@media screen and (max-width: 649) {
+  .pet-image {
+    width: 10rem;
+    height: 100%;
+  }
+
   .more-info-entry {
     font-size: 0.65rem;
     line-height: 0.65rem;
@@ -171,10 +179,11 @@
   }
 
   .-arrow-icon-text {
-    line-height: 0.95rem;
-    font-size: 1.175rem;
+    line-height: 1rem;
+    font-size: 1.25rem;
   }
 }
+
 
 /* loader */
 .lds-roller {
