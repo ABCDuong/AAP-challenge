@@ -84,11 +84,12 @@
   display: flex;
   flex-flow: row;
   padding: 0.25rem 0;
+  line-height: 1.25rem;
 }
 
 .more-info-category {
   font-weight: bold;
-  flex: 0 0 17%;
+  flex: 0 0 25%; /* 17%; */
 }
 
 .more-info-value {
@@ -251,7 +252,7 @@
   }
 
   .more-info-category {
-    flex: 0 0 29%;
+    flex: 0 0 31%;
   }
 
   .truncate-overflow {
@@ -286,11 +287,11 @@
   }
 
   .more-info-category {
-    flex: 0 0 13%;
+    flex: 0 0 35%;
   }
 
   .more-info-entry {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.15rem;
     padding: 0.65rem 0;
   }
@@ -305,6 +306,12 @@
 
   .-arrow-icon-text {
     line-height: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .more-info-category {
+    flex: 0 0 8%;
   }
 }
 
