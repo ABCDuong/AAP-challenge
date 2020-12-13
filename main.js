@@ -54,7 +54,6 @@ function petListings() {
     },
     openMoreInfoModal(pet) {
       this.modalData = JSON.parse(JSON.stringify(pet));
-      console.log({pet: this.modalData});
       this.isShowMoreInfoModal = true;
     },
     addMockData() {
