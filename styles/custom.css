@@ -80,6 +80,42 @@
   margin-top: -5px;
 }
 
+.more-info-entry {
+  display: flex;
+  flex-flow: row;
+  padding: 0.75rem 0;
+}
+
+.more-info-category {
+  font-weight: bold;
+  flex: 0 0 17%;
+}
+
+.more-info-value {
+  margin-left: 2rem;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.more-info-value span {
+  white-space: nowrap;
+}
+
+.truncate-overflow {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.more-info-container hr {
+  margin: auto;
+}
+
+.-arrow-icon-text-3xl {
+  line-height: 1.75rem;
+  font-size: 1.875rem;
+}
+
 @media (max-width: 768px) {
   .small-screen-card-icons {
     display: initial;
@@ -88,6 +124,32 @@
 
   .card-icons {
     display: none;
+  }
+
+  .more-info-entry {
+    padding: 0.15rem 0;
+  }
+
+  .more-info-category {
+    flex: 0 0 13%;
+  }
+
+  .truncate-overflow {
+    -webkit-line-clamp: 1;
+  }
+  
+  .more-info-container hr {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .more-info-category {
+    flex: 0 0 29%;
+  }
+
+  .truncate-overflow {
+    -webkit-line-clamp: 3;
   }
 }
 
@@ -179,8 +241,8 @@
 
 /* animations */
 .fade-in {
-  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @-webkit-keyframes fade-in {
   0% {

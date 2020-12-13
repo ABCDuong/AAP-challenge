@@ -22,9 +22,9 @@ const petInfoDetails = {
   not_good_with_cats: 'Not good with cats',
   not_good_with_dogs: 'Not good with dogs',
   not_good_with_kids: 'Not good with kids'
-}
+};
 
 const gender = {
   m: 'Male',
   f: 'Female'
-}
+};
