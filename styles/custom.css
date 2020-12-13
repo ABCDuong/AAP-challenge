@@ -59,10 +59,17 @@
   width: 98%;
 }
 
+.favorited-icon {
+  width: 35px;
+  height: 34px;
+  text-align: center;
+  display: block;
+}
+
 @media (max-width: 768px) {
   .small-screen-card-icons {
     display: initial;
-    width: 2rem
+    width: 2rem;
   }
 
   .card-icons {
@@ -153,5 +160,27 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* animations */
+.fade-in {
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

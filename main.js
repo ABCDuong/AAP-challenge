@@ -26,6 +26,7 @@ function petListings() {
         let response = await fetch(pet.details_url);
         let petDetailData = await response.json();
         pet.details = petDetailData.pet;
+        pet.isMarkedFavorite = false;
       }
     },
     filterPetList() {

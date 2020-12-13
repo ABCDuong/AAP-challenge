@@ -171,8 +171,19 @@
                 <!-- heart/info icons -->
                 <div class="card-icons absolute right-4 top-4">
                   <div class="cursor-pointer">
-                    <img src="images/favorite.svg"
-                         alt="favorite">
+                    <template x-if="!pet.isMarkedFavorite">
+                      <img src="images/favorite.svg"
+                           alt="favorite"
+                           x-on:click="pet.isMarkedFavorite = true">
+                    </template>
+
+                    <template x-if="pet.isMarkedFavorite">
+                      <span class="material-icons favorited-icon fade-in
+                                   text-3xl text-red-500"
+                            x-on:click="pet.isMarkedFavorite = false">
+                        favorite
+                      </span>
+                    </template>
                   </div>
 
                   <div class="transformx-1/4-rem cursor-pointer">
