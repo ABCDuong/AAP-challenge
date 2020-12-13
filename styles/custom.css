@@ -117,6 +117,20 @@
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .more-info-category {
+    flex: 0 0 29%;
+  }
+
+  .truncate-overflow {
+    -webkit-line-clamp: 3;
+  }
+  
+  .-arrow-icon-text {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+}
 
 @media (max-width: 768px) {
   .small-screen-card-icons {
@@ -133,7 +147,7 @@
   }
   
   .more-info-entry {
-    line-height: 1rem;
+    line-height: 0.75rem;
   }
 
   .truncate-overflow {
@@ -145,21 +159,6 @@
   }
 
   .-arrow-icon-text {
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .more-info-category {
-    flex: 0 0 29%;
-  }
-
-  .truncate-overflow {
-    -webkit-line-clamp: 3;
-  }
-  
-  .-arrow-icon-text {
-    font-size: 1.25rem;
     line-height: 1.25rem;
   }
 }
