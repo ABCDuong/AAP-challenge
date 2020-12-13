@@ -268,7 +268,9 @@
   }
 
   .more-info-entry {
-    line-height: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.15rem;
+    padding: 0.65rem 0;
   }
 
   .truncate-overflow {
@@ -284,7 +286,7 @@
   }
 }
 
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 635px) {
   .main-container {
     padding: 20px 0 !important;
   }
@@ -308,5 +310,13 @@
   .-arrow-icon-text {
     line-height: 1rem;
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .more-info-entry {
+    font-size: 0.85rem;
+    line-height: 0.95rem;
+    padding: 0.275rem 0;
   }
 }
