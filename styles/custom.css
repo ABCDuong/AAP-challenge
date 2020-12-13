@@ -285,6 +285,10 @@
 }
 
 @media screen and (max-width: 649px) {
+  .main-container {
+    padding: 20px 0 !important;
+  }
+
   .pet-image {
     min-width: 10rem;
     width: 100%;
@@ -292,9 +296,9 @@
   }
 
   .more-info-entry {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     line-height: 0.95rem;
-    padding: 0.15rem 0;
+    padding: 0.275rem 0;
   }
 
   .more-info-category {

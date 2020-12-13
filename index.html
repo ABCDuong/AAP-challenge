@@ -22,7 +22,7 @@
 <body>
   <div x-data="{...petListings(), ...dropdownBehavior()}"
        x-init="getPetList()"
-       class="p-6 md:p-8 lg:p-12 xl:p-20 2xl:p-24">
+       class="main-container p-6 md:p-8 lg:p-12 xl:p-20 2xl:p-24">
     <template x-if="isLoading">
       <div class="block m-auto w-fit-content">
         <div class="flex flex-col">
@@ -137,7 +137,7 @@
               <template x-if="pet.isShowMoreInfo">
                 <div
                      class="more-info-container fade-in z-10 h-full w-full absolute bg-blue-0099B8 text-white">
-                  <span class="material-icons cursor-pointer text-xs sm:text-lg md:text-4xl
+                  <span class="material-icons cursor-pointer text-sm sm:text-lg md:text-4xl
                                absolute top-4 right-4"
                         x-on:click="pet.isShowMoreInfo = false">
                     close
