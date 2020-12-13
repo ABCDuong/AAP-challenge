@@ -135,13 +135,15 @@
                         md:flex md:flex-col">
               <!-- more info -->
               <template x-if="pet.isShowMoreInfo">
-                <div
-                     class="more-info-container fade-in z-10 h-full w-full absolute bg-blue-0099B8 text-white">
-                  <span class="material-icons cursor-pointer text-base sm:text-lg md:text-4xl
-                               absolute top-4 right-4"
-                        x-on:click="pet.isShowMoreInfo = false">
-                    close
-                  </span>
+                <div class="more-info-container fade-in z-10 h-full w-full
+                            absolute bg-blue-0099B8 text-white">
+                  <button>
+                    <span class="material-icons cursor-pointer text-base sm:text-lg md:text-4xl
+                                 absolute top-4 right-4"
+                          x-on:click="pet.isShowMoreInfo = false">
+                      close
+                    </span>
+                  </button>
 
                   <div class="p-4 md:p-8 mt-0 lg:mt-8
                               text-xs sm:text-sm lg:text-base 
@@ -203,17 +205,21 @@
                 <div class="small-screen-card-icons absolute">
                   <div class="cursor-pointer">
                     <template x-if="!pet.isMarkedFavorite">
-                      <img src="images/favorite-over-white.svg"
-                           alt="favorite"
-                           x-on:click="pet.isMarkedFavorite = true">
+                      <button>
+                        <img src="images/favorite-over-white.svg"
+                             alt="favorite"
+                             x-on:click="pet.isMarkedFavorite = true">
+                      </button>
                     </template>
 
                     <template x-if="pet.isMarkedFavorite">
-                      <span class="material-icons small-favorited-icon fade-in
-                                        text-3xl text-red-500"
-                            x-on:click="pet.isMarkedFavorite = false">
-                        favorite
-                      </span>
+                      <button>
+                        <span class="material-icons small-favorited-icon fade-in
+                                     text-3xl text-red-500"
+                              x-on:click="pet.isMarkedFavorite = false">
+                          favorite
+                        </span>
+                      </button>
                     </template>
                   </div>
 
