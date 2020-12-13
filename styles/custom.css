@@ -111,7 +111,7 @@
   margin: auto;
 }
 
-.-arrow-icon-text-3xl {
+.-arrow-icon-text {
   line-height: 1.75rem;
   font-size: 1.875rem;
 }
@@ -126,12 +126,12 @@
     display: none;
   }
 
-  .more-info-entry {
-    padding: 0.15rem 0;
-  }
-
   .more-info-category {
     flex: 0 0 13%;
+  }
+  
+  .more-info-entry {
+    line-height: 1rem;
   }
 
   .truncate-overflow {
@@ -140,6 +140,23 @@
   
   .more-info-container hr {
     display: none;
+  }
+
+  .-arrow-icon-text {
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 649) {
+  .more-info-entry {
+    font-size: 0.65rem;
+    line-height: 0.65rem;
+    padding: 0.15rem 0;
+  }
+
+  .-arrow-icon-text {
+    line-height: 0.95rem;
+    font-size: 1.175rem;
   }
 }
 
@@ -150,6 +167,11 @@
 
   .truncate-overflow {
     -webkit-line-clamp: 3;
+  }
+  
+  .-arrow-icon-text {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
   }
 }
 
