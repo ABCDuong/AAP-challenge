@@ -171,16 +171,18 @@
                     <div class="more-info-entry lg:py-3">
                       <span class="more-info-category">Details</span>
 
-                      <div class="more-info-value truncate-overflow
+                      <div class="more-info-value
                                   flex md:flex-col flex-row">
-                        <span
-                              x-text="pet.details.housetrained === 1 ? petInfoDetails.housetrained : petInfoDetails.not_housetrained"></span>
-                        <span
-                              x-text="pet.details.good_with_cats === 1 ? petInfoDetails.good_with_cats : petInfoDetails.not_good_with_cats"></span>
-                        <span
-                              x-text="pet.details.good_with_dogs === 1 ? petInfoDetails.good_with_dogs : petInfoDetails.not_good_with_dogs"></span>
-                        <span
-                              x-text="pet.details.good_with_kids === 1 ? petInfoDetails.good_with_kids : petInfoDetails.not_good_with_kids"></span>
+                        <p class="truncate-overflow">
+                          <span class="pet-info-detail"
+                                x-text="pet.details.housetrained === 1 ? petInfoDetails.housetrained : petInfoDetails.not_housetrained"></span>
+                          <span class="pet-info-detail"
+                                x-text="pet.details.good_with_cats === 1 ? petInfoDetails.good_with_cats : petInfoDetails.not_good_with_cats"></span>
+                          <span class="pet-info-detail"
+                                x-text="pet.details.good_with_dogs === 1 ? petInfoDetails.good_with_dogs : petInfoDetails.not_good_with_dogs"></span>
+                          <span class="pet-info-detail"
+                                x-text="pet.details.good_with_kids === 1 ? petInfoDetails.good_with_kids : petInfoDetails.not_good_with_kids"></span>
+                        </p>
                       </div>
                     </div>
 

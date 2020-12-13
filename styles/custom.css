@@ -265,6 +265,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .pet-info-detail:not(:first-of-type)::before {
+    content: ",\00a0";
+    display: inline-block;
+  }
+
   .pet-image {
     min-width: 15rem;
     width: 100%;
