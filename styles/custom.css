@@ -15,10 +15,6 @@
   width: fit-content;
 }
 
-.h-58px-rem {
-  height: 3.625rem;
-}
-
 .bg-yellow-FFCC1B {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 204, 27, var(--tw-bg-opacity));
@@ -49,6 +45,29 @@
 .text-gray-24 {
   --tw-text-opacity: 1;
   color: rgba(36, 36, 36, var(--tw-text-opacity));
+}
+
+.small-screen-card-icons {
+  display: none;
+}
+
+.card-icons {
+  display: initial;
+}
+
+.dropdown {
+  width: 98%;
+}
+
+@media (max-width: 768px) {
+  .small-screen-card-icons {
+    display: initial;
+    width: 2rem
+  }
+
+  .card-icons {
+    display: none;
+  }
 }
 
 /* loader */
