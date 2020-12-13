@@ -2,6 +2,8 @@ function petListings() {
   return {
     isLoading: true,
     isFiltering: false,
+    isShowMoreInfoModal: false,
+    modalData: null,
     petList: [],
     petListFiltered: [],
     selectedPetListState: 'Default',
@@ -49,6 +51,11 @@ function petListings() {
       }
 
       this.isFiltering = false;
+    },
+    openMoreInfoModal(pet) {
+      this.modalData = JSON.parse(JSON.stringify(pet));
+      console.log({pet: this.modalData});
+      this.isShowMoreInfoModal = true;
     },
     addMockData() {
       for (let i = 0; i < this.petList.length; i += 3) {
