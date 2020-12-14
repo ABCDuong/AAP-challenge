@@ -352,9 +352,38 @@
     line-height: 0.95rem;
     padding: 0.275rem 0;
   }
+  .pet-card {
+    height: 10rem;
+  }
+
+  .pet-image {
+    min-width: 10rem;
+  }
+
+  .image-container {
+    width: 10rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  .pet-card {
+    height: 10rem;
+  }
+
+  .pet-image {
+    min-width: 10rem;
+  }
+
+  .image-container {
+    width: 10rem;
+  }
+
+  .adopted-stat {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
   .pet-card {
     height: 6rem;
   }
@@ -368,15 +397,15 @@
   }
 
   .pet-stats-1 {
-    font-size: 0.975rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.15rem;
   }
   .pet-stats-2 {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   .pet-stats-3 {
     margin: 0 !important;
-    font-size: 0.785rem;
+    font-size: 0.85rem;
     flex-wrap: nowrap;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -384,6 +413,6 @@
   }
 
   .adopted-stat {
-    font-size: 0.825rem;
+    font-size: 0.85rem;
   }
 }
