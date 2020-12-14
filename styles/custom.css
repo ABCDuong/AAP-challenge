@@ -7,6 +7,10 @@
   color: #4d4d4d;
 }
 
+.mt-1\/4 {
+  margin-top: 25% !important;
+}
+
 .w-368px-rem {
   width: 23rem;
 }
