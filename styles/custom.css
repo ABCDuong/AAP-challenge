@@ -373,8 +373,8 @@
   }
 
   .more-info-content {
-    padding: 0.5rem;
-    margin: unset;
+    padding: 0.5rem !important;
+    margin: 0 !important;
   }
 }
 
