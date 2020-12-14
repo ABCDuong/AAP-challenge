@@ -311,6 +311,10 @@
   .-arrow-icon-text {
     line-height: 1.25rem;
   }
+
+  .pet-stats-1 {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -362,6 +366,10 @@
 
   .image-container {
     width: 10rem;
+  }
+
+  .pet-stats-1 {
+    font-size: 1.25rem;
   }
 }
 
