@@ -315,6 +315,10 @@
   .pet-stats-1 {
     font-size: 1.25rem;
   }
+
+  .stats-container {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 767px) {
