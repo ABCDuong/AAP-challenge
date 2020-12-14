@@ -371,19 +371,24 @@
   .pet-stats-1 {
     font-size: 1.25rem;
   }
+
+  .more-info-content {
+    padding: 0.5rem;
+    margin: unset;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .pet-card {
-    height: 8rem;
+    height: 9rem;
   }
 
   .pet-image {
-    min-width: 8rem;
+    min-width: 9rem;
   }
 
   .image-container {
-    width: 8rem;
+    width: 9rem;
   }
 
   .adopted-stat {
