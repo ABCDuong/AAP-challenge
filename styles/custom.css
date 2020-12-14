@@ -383,7 +383,7 @@
   }
 }
 
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 365px) {
   .pet-card {
     height: 6rem;
   }
